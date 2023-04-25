@@ -25,7 +25,7 @@ docker build -t myapp:latest .
 5. Start the container.
 
 ```bash
-docker run -it --rm --name worker -v `pwd`/share:/share -v `pwd`/local-chromium:/app/.local-chromium/ -v `pwd`/Profils:/app/Profils -v `pwd`/Logs:/app/Logs myapp
+docker run -itd --name worker -v `pwd`/share:/share -v `pwd`/local-chromium:/app/.local-chromium/ -v `pwd`/Profils:/app/Profils -v `pwd`/Logs:/app/Logs myapp
 ```
 
 Success when you see the following message.
