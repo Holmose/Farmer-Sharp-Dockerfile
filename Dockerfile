@@ -27,4 +27,4 @@ VOLUME /share/
 # 设置容器的入口点为 C# 程序
 ENTRYPOINT ["/docker-entrypoint.sh"]
 #CMD ["dotnet", "Microsoft Rewards Farmer.TUI.dll"]
-CMD ["bash", "-c", "dotnet 'Microsoft Rewards Farmer.TUI.dll' -a --disable-gpu,--no-sandbox | stdbuf -o0 sed \"s/^/$(date -u +%FT%T.%N) /\" "]
+CMD ["bash", "-c", "dotnet 'Microsoft Rewards Farmer.TUI.dll' -b -a --disable-gpu,--no-sandbox | stdbuf -o0 sed \"s/^/$(date -u +%FT%T.%N) /\" "]
