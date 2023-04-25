@@ -26,4 +26,5 @@ RUN chmod +x /docker-entrypoint.sh
 VOLUME /share/
 # 设置容器的入口点为 C# 程序
 ENTRYPOINT ["/docker-entrypoint.sh"]
-CMD ["dotnet", "Microsoft Rewards Farmer.TUI.dll"]
+#CMD ["dotnet", "Microsoft Rewards Farmer.TUI.dll"]
+CMD ["bash", "-c", "dotnet 'Microsoft Rewards Farmer.TUI.dll' | stdbuf -o0 sed \"s/^/$(date -u +%FT%T.%N) /\" "]

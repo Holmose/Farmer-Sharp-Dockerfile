@@ -32,7 +32,6 @@ Success when you see the following message.
 
 ```txt
 Directory 'share' exists.
-/docker-entrypoint.sh: line 5: /usr/bin/cp: No such file or directory
 Settings.json file is successfully replaced.
 ```
 
