@@ -5,7 +5,7 @@ Please read the [Legal Notice](#legal) before using.
 1. Clone the latest version of the project
 
 ```bash
-git clone --depth=1 https://github.com/Tom60chat/Microsoft-Rewards-Farmer-Sharp.git
+git clone --depth=1 https://gitlab.com/Tom60chat/Microsoft-Rewards-Farmer-Sharp.git
 ```
 
 2. Packaging and compressing
